@@ -5,6 +5,8 @@ class Gamer:
     def __init__(self, name, age, nickname, email):
         self.name = name
         self.age = age
+        self.nickname = nickname   # Задание 2: добавлен атрибут nickname
+        self.email = email         # Задание 3: добавлен атрибут email
 
         self.games = []
 
@@ -13,8 +15,8 @@ class Gamer:
 
     # Задание 4. Измени сообщение
     def introduce(self):
-        print(f"Привет, меня зовут {self.name}, мне {self.age} лет.")
-
+        # Обновлённое сообщение с email и ником
+        print(f"Привет, меня зовут {self.name}, мне {self.age} лет. Всегда на связи по {self.email}. Ищи меня в игре по нику {self.nickname}")
 
 # Создание экземпляра класса "Gamer"
 gamer1 = Gamer("Иван", 14, "John", "john@gmail.com")
